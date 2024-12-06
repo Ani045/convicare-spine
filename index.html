@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Services Hero Section</title>
+
+    <!-- Google Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-dI2fQqfuvXcRJ4v6Y5gHjK9JrZs3Oa4rDyZ7A3nZjH6u6S1/6wXrN+5QByLqNnNjjMKx+e4A6ql6kE6b/qPqtQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <style>
+        .active-accordion {
+            background-color: #7a6f49;
+            /* Whiskey */
+            color: #fff;
+        }
+
+        .active-accordion-text {
+            color: #7a6f49;
+            /* Whiskey */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    keyframes: {
+                        shine: {
+                            '0%': { transform: 'translateX(-100%)' },
+                            '100%': { transform: 'translateX(100%)' },
+                        },
+                    },
+                    animation: {
+                        'shine-infinite': 'shine 2s linear infinite',
+                    },
+                },
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar shadow">
+        <div><img src="https://www.artemishospitals.com/latestdesign/assets/images/logo/artemis-logo.png" alt=""></div>
+        <!-- <div class="cta-main">
+            <p>Call us now</p>
+        </div> -->
+        <button
+            class="group border border-[#916301] relative h-12 overflow-hidden rounded-full bg-[#664200] px-6 text-neutral-50 transition hover:bg-[#916301]">
+            <span class="relative">Call Us Now</span>
+            <div
+                class="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[12px]">
+                <div class="relative h-full w-8 bg-white/30"></div>
+            </div>
+        </button>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <!-- <img class="hidden lg:block absolute object-cover   top-32 left-[30%] w-[800px] 
+           md:left-[32%] md:w-[600px] 
+           sm:left-[20%] sm:w-[400px] 
+           xs:left-[10%] xs:w-[300px]" src="/assets/spine-pain.png" alt="Doctor Image"> -->
+        <div class="container">
+            <div class="left-content">
+                <h1 class="title">Discover World-Class <span class="md:text-[#B29257]">Spine Care </span>at Artemis
+                    Hospitals
+                </h1>
+                <!-- <h1 class="title">Spines Healthy & Safe</h1> -->
+                <!-- <div class="hidden features-hero md:block">
+                    <div class="feature feature-blue">
+                        <i class="icon"></i>
+                        <p>A Procedure That Is Precise & Efficient</p>
+                    </div>
+                    <div class="feature">
+                        <i class="icon"></i>
+                        <p>A Procedure That Is Precise & Efficient</p>
+                    </div>
+                    <div class="feature feature-blue">
+                        <i class="icon"></i>
+                        <p>A Procedure That Is Precise & Efficient</p>
+                    </div>
+                    <div class="feature">
+                        <i class="icon"></i>
+                        <p>A Procedure That Is Precise & Efficient</p>
+                    </div>
+                </div> -->
+                <div class="max-w-lg">
+                    <div
+                        class="bg-[#664200] text-white text-xs md:text-sm px-3 mb-2 py-2 rounded-full w-full row flex gap-3">
+                        <i class="icon">♦</i>
+                        <p>Minimally Invasive Spine Surgery</p>
+                    </div>
+                    <div
+                        class="bg-[#916301] text-white text-xs md:text-sm px-3 mb-2 py-2 rounded-full w-full row flex gap-3">
+                        <i class="icon">♦</i>
+                        <p>Precision and Accuracy with Robotic Assistance</p>
+                    </div>
+                    <div
+                        class="bg-[#664200] text-white text-xs md:text-sm px-3 mb-2 py-2 rounded-full w-full row flex gap-3">
+                        <i class="icon">♦</i>
+                        <p>Expert Team of Spine Specialists</p>
+                    </div>
+                    <div
+                        class="bg-[#916301] text-white text-xs md:text-sm px-3 mb-2 py-2 rounded-full w-full row flex gap-3">
+                        <i class="icon">♦</i>
+                        <p>High-Resolution Imaging for Accurate Spine Diagnosis</p>
+                    </div>
+
+                </div>
+                <!-- <img class="md:hidden" src="/assets/spine-pain.png" alt="spine-hero"> -->
+                <div class="stats hidden md:grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+                    <div class="stat flex flex-col items-center p-4  rounded ">
+                        <img src="/assets/Bed.png" alt="stat" class="w-12 h-12 mb-2">
+                        <span class="value text-xl font-bold">30+</span>
+                        <span class="label text-sm text-gray-600">Years</span>
+                    </div>
+                    <div class="stat flex flex-col items-center p-4  rounded ">
+                        <img src="/assets/Countries.png" alt="stat" class="w-12 h-12 mb-2">
+                        <span class="value text-xl font-bold">300+</span>
+                        <span class="label text-sm text-gray-600">Patients</span>
+                    </div>
+                    <div class="stat flex flex-col items-center p-4  rounded ">
+                        <img src="/assets/Doctors.png" alt="stat" class="w-12 h-12 mb-2">
+                        <span class="value text-xl font-bold">50+</span>
+                        <span class="label text-sm text-gray-600">Awards</span>
+                    </div>
+                    <div class="stat flex flex-col items-center p-4  rounded ">
+                        <img src="/assets/Hospital.png" alt="stat" class="w-12 h-12 mb-2">
+                        <span class="value text-xl font-bold">100+</span>
+                        <span class="label text-sm text-gray-600">Staff</span>
+                    </div>
+                    <!-- Add the remaining stats similarly -->
+                </div>
+
+            </div>
+            <div class="right-content backdrop-blur-sm">
+                <h2 class="form-title">MAKE AN APPOINTMENT</h2>
+                <form class="appointment-form">
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="tel" placeholder="Phone Number" />
+                    <input type="text" placeholder="Message" />
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+            </div>
+            <div class="stats md:hidden grid w-full grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+                <div class="stat flex flex-col items-center p-4  rounded ">
+                    <img src="/assets/Bed.png" alt="stat" class="w-12 h-12 mb-2">
+                    <span class="value text-xl font-bold">30+</span>
+                    <span class="label text-sm text-gray-600">Years</span>
+                </div>
+                <div class="stat flex flex-col items-center p-4  rounded ">
+                    <img src="/assets/Countries.png" alt="stat" class="w-12 h-12 mb-2">
+                    <span class="value text-xl font-bold">300+</span>
+                    <span class="label text-sm text-gray-600">Patients</span>
+                </div>
+                <div class="stat flex flex-col items-center p-4  rounded ">
+                    <img src="/assets/Doctors.png" alt="stat" class="w-12 h-12 mb-2">
+                    <span class="value text-xl font-bold">50+</span>
+                    <span class="label text-sm text-gray-600">Awards</span>
+                </div>
+                <div class="stat flex flex-col items-center p-4  rounded ">
+                    <img src="/assets/Hospital.png" alt="stat" class="w-12 h-12 mb-2">
+                    <span class="value text-xl font-bold">100+</span>
+                    <span class="label text-sm text-gray-600">Staff</span>
+                </div>
+                <!-- Add the remaining stats similarly -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us " id="about">
+        <h3>Discover India’s Top Rated Doctors and Services at Branding Pioneers Expert Care Today</h3>
+        <p class="about-desc">Artemis Hospitals is home to a team of world-renowned spine specialists dedicated to
+            providing exceptional care for a
+            variety of spinal disorders. Our highly experienced surgeons, neurologists, and specialists collaborate to
+            offer
+            personalized treatment plans that prioritize the well-being of each patient.We focus on a holistic approach,
+            offering both surgical and non-surgical options to treat conditions like spinal deformities, degenerative
+            diseases, tumors, traumatic injuries, and chronic pain. Our minimally invasive surgery
+            techniques, targeted therapies, and comprehensive rehabilitation ensure optimal recovery.
+            With state-of-the-art infrastructure and advanced medical technology, Artemis Hospitals ensures precise
+            diagnoses and
+            effective treatments. Our modern imaging systems and innovative surgical methods are designed to deliver the
+            highest
+            standard of care.At Artemis Hospitals, we are committed to restoring the quality of life for our patients.
+            Whether seeking treatment for
+            a specific condition or preventive care, trust our expert team for world-class spine care and compassionate
+            support.
+        </p>
+
+        <!-- CTA Button -->
+        <button
+            class="group border border-[#916301] relative h-12 overflow-hidden rounded-full bg-[#664200] px-6 text-neutral-50 transition hover:bg-[#916301]">
+            <span class="relative text-sm">Call Us Now</span>
+            <div
+                class="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[12px]">
+                <div class="relative h-full w-8 bg-white/30"></div>
+            </div>
+        </button>
+    </section>
+
+    <!-- Services section -->
+    <section id="our-services" class="services-section">
+        <div class="services-container">
+            <!-- <div class="services-image">
+                <img src="https://via.placeholder.com/300x400" alt="Spine Surgery">
+            </div> -->
+            <div class="services-content">
+                <h2 class="section-heading">Our Spine Surgery Services</h2>
+                <!-- <p class="section-description">
+                    We offer a comprehensive range of spine surgery services performed by experienced specialists to
+                    ensure optimal patient care and recovery.
+                </p> -->
+                <div class="services-cards">
+                    <!-- Service Card 1 -->
+                    <div class="service-card w-full">
+                        <div class="service-icon">
+                            <img src="/assets/Discectomy.png" alt="">
+                        </div>
+                        <h3 class="service-title">Discectomy/ Microdiscectomy</h3>
+                        <!-- <p class="service-description">Minimally invasive procedures to remove herniated disc material
+                            pressing on nerves.</p> -->
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card w-full">
+                        <div class="service-icon">
+                            <img src="/assets/spinal-surgery.png" alt="">
+                        </div>
+                        <h3 class="service-title">Spinal Fusion Surgery</h3>
+                        <!-- <p class="service-description">Joining two or more vertebrae to eliminate motion and reduce
+                            pain.</p> -->
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card w-full">
+                        <div class="service-icon">
+                            <img src="/assets/Artificial-Disc-Replacement-Surgery.png" alt="">
+                        </div>
+                        <h3 class="service-title">Artificial Disc Replacement Surgery</h3>
+                        <!-- <p class="service-description">Replacing damaged spinal discs with artificial implants to
+                            maintain mobility.</p> -->
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="service-card w-full">
+                        <div class="service-icon">
+                            <img src="/assets/Kyphoplasty.png" alt="">
+                        </div>
+                        <h3 class="service-title">Kyphoplasty/ Vertebroplasty</h3>
+                        <!-- <p class="service-description">Minimizing spinal fractures and restoring vertebral height using
+                            specialized techniques.</p> -->
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="service-card w-full">
+                        <div class="service-icon">
+                            <img src="/assets/Scoliosis-Surgery.png" alt="">
+                        </div>
+                        <h3 class="service-title">Scoliosis Surgery</h3>
+                        <!-- <p class="service-description">Correcting abnormal curvature of the spine to improve posture and
+                            alleviate pain.</p> -->
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="service-card w-full">
+                        <div class="service-icon">
+                            <img src="/assets/Endoscopic-Spine-Surgery.png" alt="">
+                        </div>
+                        <h3 class="service-title">Endoscopic Spine Surgery</h3>
+                        <!-- <p class="service-description">Utilizing endoscopic techniques for less invasive spine surgeries
+                            with quicker recovery.</p> -->
+                    </div>
+                    <!-- Service Card 7 -->
+                    <div class="service-card w-full">
+                        <div class="service-icon">
+                            <img src="/assets/Laminectomy.png" alt="">
+                        </div>
+                        <h3 class="service-title">Laminectomy</h3>
+                        <!-- <p class="service-description">Removing part of the vertebral bone to relieve pressure on the
+                            spinal cord or nerves.</p> -->
+                    </div>
+                    <!-- Service Card 8 -->
+                    <div class="service-card w-full">
+                        <div class="service-icon">
+                            <img src="/assets/Foraminotomy.png" alt="">
+                        </div>
+                        <h3 class="service-title">Foraminotomy</h3>
+                        <!-- <p class="service-description">Enlarging the passageways where nerve roots exit the spine to
+                            alleviate compression.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment plan -->
+    <section class="treatment-plan" id="about">
+        <h3>Hassle-Free Treatment Plan
+        </h3>
+        <p class="treatment-desc">At Artemis Hospitals, we know how difficult it is to travel overseas for medical
+            treatment. That tough situation is the
+            reason we have clear-cut treatment plans that are hassle-free and cater to individual patients’ needs. The
+            use of
+            cutting-edge technologies and advanced techniques assures that every patient is treated rather to a highest
+            achievable
+            standard. Our focus is always on the patient; and with over 400 trained personnel, rest assured you will be
+            well taken
+            care of during your treatment. For spine care in India, choose Artemis Hospitals and be sure you will get
+            the best care
+            and attention
+            .</p>
+
+        <!-- CTA Button -->
+        <button
+            class="group border border-[#916301] relative h-12 overflow-hidden rounded-full bg-[#664200] px-6 text-neutral-50 transition hover:bg-[#916301]">
+            <span class="relative">Call Us Now</span>
+            <div
+                class="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[12px]">
+                <div class="relative h-full w-8 bg-white/30"></div>
+            </div>
+        </button>
+    </section>
+    <!-- Why choose us -->
+    <div>
+        <img src="/assets/why-choose-us.png" alt="" class="w-7xl mx-auto" draggable="false">
+    </div>
+
+    <!-- Queries section -->
+    <section>
+        <div
+            class="px-4 py-16 mt-5 bg-[#fffbda] rounded-lg shadow-[0px_0px_4px_0_rgba(0,0,0,0.1)] mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+            <div class="flex flex-col justify-between lg:flex-row">
+                <div class="mb-5 lg:max-w-lg lg:pr-5 lg:mb-0">
+                    <div class="max-w-xl mb-6">
+                        <h2
+                            class="max-w-lg mb-6 font-sans text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl sm:leading-none">
+                            Right Doctor, Right Care<br class="hidden md:block" />
+
+
+                        </h2>
+                        <p class="text-base text-gray-700 md:text-sm">
+                            At Artemis Hospitals, we provide highly experienced spine specialists for patients worldwide
+                            who require top-level
+                            treatment. With sophisticated facilities and methods, we ensure you always receive the best
+                            care. Our focus on patients,
+                            along with assembling skilled professionals, ensures your convenience and safety throughout
+                            your journey. Choosing
+                            Artemis Hospitals for spine interventions guarantees state-of-the-art modalities and expert
+                            care to meet your highest
+                            expectations.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center border border-gray-300 rounded lg:w-2/5">
+                    <img src="/assets/Spinal-cord.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div
+            class="px-4 py-8 mt-5 mx-auto rounded-lg shadow-[0px_0px_4px_0_rgba(0,0,0,0.1)] sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+            <div class="flex flex-col justify-between lg:flex-row-reverse">
+
+                <div class="mb-5 lg:max-w-lg lg:pr-5 lg:mb-0">
+                    <div class="max-w-xl mb-6">
+                        <h2
+                            class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl sm:leading-none">
+                            Visa Process<br class="hidden md:block" />
+                            <!-- jumps over
+                            <span class="inline-block text-deep-purple-accent-400">a lazy dog</span> -->
+                        </h2>
+                        <p class="text-base text-gray-700 md:text-sm">
+                            One of our committed teams assists you in applying for a medical visa, so that you can be
+                            assured of getting medical
+                            treatment quickly as all your documents are ready for submission. Spine Instruments moreover
+                            aids in the documentation
+                            and advances the visa application process for patients going abroad for spine surgery
+                            especially.
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center border border-gray-300 rounded lg:w-2/5">
+                    <img src="/assets/Spinal-cord.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div
+            class="px-4 py-8 bg-[#fffbda] mx-auto my-5 rounded-lg shadow-[0px_0px_4px_0_rgba(0,0,0,0.1)] sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+            <div class="flex flex-col justify-between lg:flex-row">
+                <div class="mb-5 lg:max-w-lg lg:pr-5 lg:mb-0">
+                    <div class="max-w-xl mb-6">
+                        <h2
+                            class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl sm:leading-none">
+                            Hassle-Free Travel<br class="hidden md:block" />
+
+                            <!-- <span class="inline-block text-deep-purple-accent-400">a lazy dog</span> -->
+                        </h2>
+                        <p class="text-base text-gray-700 md:text-sm">
+                            Traveling to Artemis Hospitals has never been such an easy and convenient experience, as the
+                            hospital provides
+                            transportation across the city, whether it is for receiving treatment or any other purpose,
+                            so you don’t have to worry
+                            about any logistical issues and only concentrate on your medical issues.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center border border-gray-300 rounded lg:w-2/5">
+                    <img src="/assets/Spinal-cord.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container mt-14">
+            <div class="faq-header">
+                <h2 class="font-bold text-[#352000]">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How is my treatment planned?
+                    </h3>
+                    <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>All medical treatments are recommended depending on your diagnosis as well as the medical
+                        history. After an extensive
+                        discussion with one of our spine specialists, we will develop a treatment plan, which in this
+                        case will be appropriate
+                        for you.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What documents do I need to provide for medical treatment in India?
+                    </h3>
+                    <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you need a pre-treatment consultation with your doctor in order to know the available
+                        options and that you are
+                        pleased with the treatment strategy. After a patient’s recovery, follow- up consultations and
+                        rehabilitation assistance
+                        is provided for a patient so as to monitor how well the recovery is going on.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I pay for medical treatment in India?
+                    </h3>
+                    <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>There are many secure and reliable ways to pay for your treatment such as international credit
+                        and debit cards, wire
+                        transfer or making payment at the hospital. For your own ease and comfort, our team will give
+                        you clear directions on
+                        how to make the payment.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I see my doctor before I decide, and what about my post-recovery care?</h3>
+                    <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you need a pre-treatment consultation with your doctor in order to know the available
+                        options and that you are
+                        pleased with the treatment strategy. After a patient’s recovery, follow- up consultations and
+                        rehabilitation assistance
+                        is provided for a patient so as to monitor how well the recovery is going on.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I pay for medical treatment in India?</h3>
+                    <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>There are many secure and reliable ways to pay for your treatment such as international credit
+                        and debit cards, wire
+                        transfer or making payment at the hospital. For your own ease and comfort, our team will give
+                        you clear directions on
+                        how to make the payment.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do I need to get vaccinated before traveling to India for medical treatment?</h3>
+                    <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>According to your medical history, you can speak to your doctor about any immunizations.
+                        Typically, immunizations that
+                        are available for disease such as Typhoid, Tetanus, and Hepatitis A/B would be suggested.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I combine medical treatment with tourism in India?</h3>
+                    <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, many patients prefer to combine their treatment with a visit to India’s rich cultural and
+                        historical sites. Your
+                        medical treatment’s location can be selected along with vacation activities.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do doctors in India speak English?</h3>
+                    <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Most definitely. Namely, Indian people in general, particularly doctors in reputable hospitals
+                        like Artemis can speak
+                        English fluently which makes it easy for foreign patients.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is it safe to get medical treatment in India?
+                    </h3>
+                    <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>India has facilities to rival world-class standards and doctors that possess the highest levels
+                        of skill & expertise.
+                        Artemis Hospitals have received accreditations from JCI and NABH organizations which guarantee
+                        upholding international
+                        standards of patient safety and medical care.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do doctors in India speak English?</h3>
+                    <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, English is one language that doctors use quite often in India especially in towns and cities
+                        so expect to be able
+                        to communicate efficiently during your treatment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams section -->
+    <section class="doctors-section">
+        <h2 class="font-bold text-[#352000] text-[2rem]">Meet Our Doctors</h2>
+        <div class="doctors-container">
+            <div class="doctor-card">
+                <img src="/assets/doctor-2.png" alt="Dr. S.K. Rajan" class="doctor-image">
+                <h3>Dr. S.K. Rajan</h3>
+                <p class="role">Head of Spine Surgery Deptartment</p>
+                <p class="doctor-stat">MS (Orthopaedics), DNB (Orthopaedics),</p>
+                <p class="doctor-stat">Fellowship in Spine Surgery (USA)</p>
+            </div>
+            <div class="doctor-card">
+                <img src="/assets/doctor-1.png" alt="Dr. Ravi Gupta" class="doctor-image">
+
+                <h3>Dr. Hitesh Garg</h3>
+                <p class="role">Chief Spine Surgeon & Director of Neurosurgery</p>
+                <p class="doctor-stat">MS (General Surgery), MCh (Neurosurgery), </p>
+                <p class="doctor-stat">Fellowship in Spine Surgery (USA,Singapore)</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-white">
+        <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+            <h2 class="font-bold text-[#352000] text-center text-[2rem]">Patient Reviews</h2>
+
+            <div class="mt-8">
+                <div id="keen-slider" class="keen-slider">
+                    <div class="keen-slider__slide opacity-40 transition-opacity duration-500">
+                        <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                            <div class="flex items-center gap-4">
+                                <div>
+                                    <svg height="48px" width="48px" version="1.1" id="_x32_"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <style type="text/css">
+                                                .st0 {
+                                                    fill: #5c5c5c;
+                                                }
+                                            </style>
+                                            <g>
+                                                <path class="st0"
+                                                    d="M256,0C114.613,0,0,114.616,0,255.996C0,397.382,114.613,512,256,512c141.386,0,256-114.617,256-256.004 C512,114.616,397.387,0,256,0z M255.996,401.912c-69.247-0.03-118.719-9.438-117.564-18.058 c6.291-47.108,44.279-51.638,68.402-70.94c10.832-8.666,16.097-6.5,16.097-20.945c0-5.053,0-14.446,0-23.111 c-6.503-7.219-8.867-6.317-14.366-34.663c-11.112,0-10.396-14.446-15.638-27.255c-4.09-9.984-0.988-14.294,2.443-16.165 c-1.852-9.87-0.682-43.01,13.532-60.259l-2.242-15.649c0,0,4.47,1.121,15.646-1.122c11.181-2.227,38.004-8.93,53.654,4.477 c37.557,5.522,47.53,36.368,40.204,72.326c3.598,1.727,7.178,5.962,2.901,16.392c-5.238,12.809-4.522,27.255-15.634,27.255 c-5.496,28.346-7.863,27.444-14.366,34.663c0,8.666,0,18.058,0,23.111c0,14.445,5.261,12.279,16.093,20.945 c24.126,19.301,62.111,23.831,68.406,70.94C374.715,392.474,325.246,401.882,255.996,401.912z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div>
+                                    <div class="flex justify-center gap-0.5 text-yellow-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+
+                                    <p class="mt-0.5 text-lg font-medium text-gray-900">Rajesh Kumar, 45</p>
+                                </div>
+                            </div>
+
+                            <p class="mt-4 text-gray-700">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
+                                consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius
+                                accusamus error officiis atque voluptates magnam!
+                            </p>
+                        </blockquote>
+                    </div>
+
+                    <div class="keen-slider__slide opacity-40 transition-opacity duration-500">
+                        <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                            <div class="flex items-center gap-4">
+                                <div>
+                                    <svg height="48px" width="48px" version="1.1" id="_x32_"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <style type="text/css">
+                                                .st0 {
+                                                    fill: #5c5c5c;
+                                                }
+                                            </style>
+                                            <g>
+                                                <path class="st0"
+                                                    d="M256,0C114.613,0,0,114.616,0,255.996C0,397.382,114.613,512,256,512c141.386,0,256-114.617,256-256.004 C512,114.616,397.387,0,256,0z M255.996,401.912c-69.247-0.03-118.719-9.438-117.564-18.058 c6.291-47.108,44.279-51.638,68.402-70.94c10.832-8.666,16.097-6.5,16.097-20.945c0-5.053,0-14.446,0-23.111 c-6.503-7.219-8.867-6.317-14.366-34.663c-11.112,0-10.396-14.446-15.638-27.255c-4.09-9.984-0.988-14.294,2.443-16.165 c-1.852-9.87-0.682-43.01,13.532-60.259l-2.242-15.649c0,0,4.47,1.121,15.646-1.122c11.181-2.227,38.004-8.93,53.654,4.477 c37.557,5.522,47.53,36.368,40.204,72.326c3.598,1.727,7.178,5.962,2.901,16.392c-5.238,12.809-4.522,27.255-15.634,27.255 c-5.496,28.346-7.863,27.444-14.366,34.663c0,8.666,0,18.058,0,23.111c0,14.445,5.261,12.279,16.093,20.945 c24.126,19.301,62.111,23.831,68.406,70.94C374.715,392.474,325.246,401.882,255.996,401.912z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div>
+                                    <div class="flex justify-center gap-0.5 text-yellow-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+
+                                    <p class="mt-0.5 text-lg font-medium text-gray-900">Sushila Devi, 60</p>
+                                </div>
+                            </div>
+
+                            <p class="mt-4 text-gray-700">
+                                After being diagnosed with a complex urinary tract condition that necessitated surgery,
+                                I was hesitant to travel for
+                                treatment. But as it turned out, Dr. Vikram Barua Kaushik at Artemis Hospitals put me at
+                                ease from the very beginning.
+
+                            </p>
+                        </blockquote>
+                    </div>
+
+                    <div class="keen-slider__slide opacity-40 transition-opacity duration-500">
+                        <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                            <div class="flex items-center gap-4">
+                                <div>
+                                    <svg height="48px" width="48px" version="1.1" id="_x32_"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <style type="text/css">
+                                                .st0 {
+                                                    fill: #5c5c5c;
+                                                }
+                                            </style>
+                                            <g>
+                                                <path class="st0"
+                                                    d="M256,0C114.613,0,0,114.616,0,255.996C0,397.382,114.613,512,256,512c141.386,0,256-114.617,256-256.004 C512,114.616,397.387,0,256,0z M255.996,401.912c-69.247-0.03-118.719-9.438-117.564-18.058 c6.291-47.108,44.279-51.638,68.402-70.94c10.832-8.666,16.097-6.5,16.097-20.945c0-5.053,0-14.446,0-23.111 c-6.503-7.219-8.867-6.317-14.366-34.663c-11.112,0-10.396-14.446-15.638-27.255c-4.09-9.984-0.988-14.294,2.443-16.165 c-1.852-9.87-0.682-43.01,13.532-60.259l-2.242-15.649c0,0,4.47,1.121,15.646-1.122c11.181-2.227,38.004-8.93,53.654,4.477 c37.557,5.522,47.53,36.368,40.204,72.326c3.598,1.727,7.178,5.962,2.901,16.392c-5.238,12.809-4.522,27.255-15.634,27.255 c-5.496,28.346-7.863,27.444-14.366,34.663c0,8.666,0,18.058,0,23.111c0,14.445,5.261,12.279,16.093,20.945 c24.126,19.301,62.111,23.831,68.406,70.94C374.715,392.474,325.246,401.882,255.996,401.912z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div>
+                                    <div class="flex justify-center gap-0.5 text-yellow-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+
+                                    <p class="mt-0.5 text-lg font-medium text-gray-900">Priya Sharma, 38</p>
+                                </div>
+                            </div>
+
+                            <p class="mt-4 text-gray-700">
+                                The diagnosis of breast cancer came as a shock to me. Things changed for the better when
+                                I saw Dr. Sudeshna Kar at
+                                Artemis Hospitals Ms Kar not only focused on successfully treating my cancer using
+                                cutting edge therapies but also
+                                provided me emotional support during my entire journey.
+                            </p>
+                        </blockquote>
+                    </div>
+
+                    <div class="keen-slider__slide opacity-40 transition-opacity duration-500">
+                        <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+                            <div class="flex items-center gap-4">
+                                <div>
+                                    <svg height="48px" width="48px" version="1.1" id="_x32_"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <style type="text/css">
+                                                .st0 {
+                                                    fill: #5c5c5c;
+                                                }
+                                            </style>
+                                            <g>
+                                                <path class="st0"
+                                                    d="M256,0C114.613,0,0,114.616,0,255.996C0,397.382,114.613,512,256,512c141.386,0,256-114.617,256-256.004 C512,114.616,397.387,0,256,0z M255.996,401.912c-69.247-0.03-118.719-9.438-117.564-18.058 c6.291-47.108,44.279-51.638,68.402-70.94c10.832-8.666,16.097-6.5,16.097-20.945c0-5.053,0-14.446,0-23.111 c-6.503-7.219-8.867-6.317-14.366-34.663c-11.112,0-10.396-14.446-15.638-27.255c-4.09-9.984-0.988-14.294,2.443-16.165 c-1.852-9.87-0.682-43.01,13.532-60.259l-2.242-15.649c0,0,4.47,1.121,15.646-1.122c11.181-2.227,38.004-8.93,53.654,4.477 c37.557,5.522,47.53,36.368,40.204,72.326c3.598,1.727,7.178,5.962,2.901,16.392c-5.238,12.809-4.522,27.255-15.634,27.255 c-5.496,28.346-7.863,27.444-14.366,34.663c0,8.666,0,18.058,0,23.111c0,14.445,5.261,12.279,16.093,20.945 c24.126,19.301,62.111,23.831,68.406,70.94C374.715,392.474,325.246,401.882,255.996,401.912z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div>
+                                    <div class="flex justify-center gap-0.5 text-yellow-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+
+                                    <p class="mt-0.5 text-lg font-medium text-gray-900">Anjali & Rahul Mehta, 32 & 35
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p class="mt-4 text-gray-700">
+                                Following many years of having infertility challenges, we went ahead and started IVF at
+                                the Artemis Hospitals. I knew we
+                                were safe in capable hands – from our first consultation with Dr. Namita Jaggi. She
+                                guided us so clearly and hand-held
+                                us through the entire process.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="mt-6 flex items-center justify-center gap-4">
+                    <button aria-label="Previous slide" id="keen-slider-previous"
+                        class="text-gray-600 transition-colors hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <p class="w-16 text-center text-sm text-gray-700">
+                        <span id="keen-slider-active"></span>
+                        /
+                        <span id="keen-slider-count"></span>
+                    </p>
+
+                    <button aria-label="Next slide" id="keen-slider-next"
+                        class="text-gray-600 transition-colors hover:text-gray-900">
+                        <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-[#fcf5e0]">
+        <div class="relative px-4 py-6 overflow-hidden sm:px-6 sm:py-8 lg:p-12 xl:p-16">
+            <h2 class="text-2xl font-semibold font-display text-black sm:text-3xl">
+                SKIP THE WAITING ROOM – REGISTER ONLINE!
+            </h2>
+            <p class="mt-2 max-w-xl text-base text-gray-400">
+                Save time and avoid the hassle by registering online before your visit.
+            </p>
+            <p class="mt-2 max-w-xl text-base font-bold text-red-900">
+                Tel -
+            </p>
+            <form>
+                <div class="mt-6 sm:flex jusitfy-start">
+                    <form
+                        class="flex flex-col justify-center w-3/4 max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0">
+                        <div class=" relative ">
+                            <input type="text" id="&quot;form-subscribe-Subscribe"
+                                class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                                placeholder="Email" />
+                        </div>
+                        <button
+                            class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200 sm:ml-4 mt-4 sm:mt-0"
+                            type="submit">
+                            Send Mail
+                        </button>
+                    </form>
+                </div>
+            </form>
+            <div class="absolute inset-y-0 right-0 hidden lg:block lg:left-1/2 xl:left-1/2">
+                <picture>
+                    <img class="object-cover w-1/2 mx-auto maw-w-44" src="/assets/doctorcta.png" alt="" />
+                </picture>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all FAQ items
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const icon = item.querySelector('.icon');
+
+            question.addEventListener('click', () => {
+                // Toggle active class
+                item.classList.toggle('active');
+
+                // Close other open FAQ items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script type="module">
+        import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+
+        const keenSliderActive = document.getElementById('keen-slider-active')
+        const keenSliderCount = document.getElementById('keen-slider-count')
+
+        const keenSlider = new KeenSlider(
+            '#keen-slider',
+            {
+                loop: true,
+                defaultAnimation: {
+                    duration: 750,
+                },
+                slides: {
+                    origin: 'center',
+                    perView: 1,
+                    spacing: 16,
+                },
+                breakpoints: {
+                    '(min-width: 640px)': {
+                        slides: {
+                            origin: 'center',
+                            perView: 1.5,
+                            spacing: 16,
+                        },
+                    },
+                    '(min-width: 768px)': {
+                        slides: {
+                            origin: 'center',
+                            perView: 1.75,
+                            spacing: 16,
+                        },
+                    },
+                    '(min-width: 1024px)': {
+                        slides: {
+                            origin: 'center',
+                            perView: 3,
+                            spacing: 16,
+                        },
+                    },
+                },
+                created(slider) {
+                    slider.slides[slider.track.details.rel].classList.remove('opacity-40')
+
+                    keenSliderActive.innerText = slider.track.details.rel + 1
+                    keenSliderCount.innerText = slider.slides.length
+                },
+                slideChanged(slider) {
+                    slider.slides.forEach((slide) => slide.classList.add('opacity-40'))
+
+                    slider.slides[slider.track.details.rel].classList.remove('opacity-40')
+
+                    keenSliderActive.innerText = slider.track.details.rel + 1
+                },
+            },
+            []
+        )
+
+        const keenSliderPrevious = document.getElementById('keen-slider-previous')
+        const keenSliderNext = document.getElementById('keen-slider-next')
+
+        keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+        keenSliderNext.addEventListener('click', () => keenSlider.next())
+    </script>
+
+    <script>
+        // Accordion toggle function
+        const accordions = document.querySelectorAll('.accordion-toggle');
+        const images = {
+            1: "assets/Doctors.png",
+            2: "assets/doctorcta.png",
+            3: "assets/spine-pain.png"
+        };
+        const contentSections = document.querySelectorAll('.accordion-content');
+        const imageElement = document.getElementById('accordion-image').querySelector('img');
+
+        accordions.forEach((accordion, index) => {
+            accordion.addEventListener('click', () => {
+                // Toggle active class for accordion
+                accordions.forEach((item, i) => {
+                    const content = contentSections[i];
+                    const title = item.querySelector('.accordion-title');
+
+                    if (i === index) {
+                        content.classList.toggle('hidden');
+                        item.classList.toggle('active-accordion');
+                        title.classList.toggle('active-accordion-text');
+                        imageElement.src = images[i + 1]; // Change the image based on the clicked accordion
+                    } else {
+                        content.classList.add('hidden');
+                        item.classList.remove('active-accordion');
+                        title.classList.remove('active-accordion-text');
+                    }
+                });
+            });
+        });
+
+        // Set default active accordion to the first one
+        document.getElementById('accordion-1').click();
+    </script>
+
+</body>
+
+</html>

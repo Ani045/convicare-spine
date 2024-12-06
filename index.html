@@ -196,12 +196,14 @@
             </div>
             <div class="right-content backdrop-blur-sm">
                 <h2 class="form-title">MAKE AN APPOINTMENT</h2>
-                <form class="appointment-form text-xs">
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="tel" placeholder="Phone Number" />
-                    <input type="text" placeholder="Message" />
-                    <input type="number" placeholder="ZIP Code" />
+                <form class="appointment-form text-xs"
+                    action='https://app.formester.com/forms/37c0a593-0735-462b-a85a-65ccf0ef3373/submissions'
+                    method='POST'>
+                    <input type="text" placeholder="Name" name="name" />
+                    <input type="email" placeholder="Email" name="email" />
+                    <input type="tel" placeholder="Phone Number" name="phone-number" />
+                    <input type="text" placeholder="Message" name="message" />
+                    <input type="number" placeholder="ZIP Code" name="zip-code" />
                     <button type="submit" class="submit-btn">SUBMIT</button>
                 </form>
             </div>

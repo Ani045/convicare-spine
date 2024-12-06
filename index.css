@@ -204,7 +204,7 @@ html {
   box-shadow: #00000046 0px 0px 5px;
   /* border: 1px solid gray; */
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: #ffffea;
   /* border-radius: 8px; */
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   overflow: hidden;
@@ -229,7 +229,7 @@ html {
 }
 
 .faq-question {
-  background-color: #ffffff;
+  background-color: #ffffea;
   padding: 15px 20px;
   cursor: pointer;
   display: flex;
@@ -239,7 +239,7 @@ html {
 }
 
 .faq-question:hover {
-  background-color: #f0f8ff;
+  background-color: #fff4ca;
 }
 
 .faq-question h3 {
@@ -265,7 +265,7 @@ html {
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  background-color: #f9f9f9;
+  background-color: #fff6e3;
   padding: 0 20px;
   transition: max-height 0.3s ease, padding 0.3s ease;
 }
@@ -513,6 +513,7 @@ html {
   margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 100px;
+  background-color: #fff9e9;
 }
 
 .submit-btn {
@@ -522,6 +523,7 @@ html {
   padding: 12px 24px;
   border-radius: 100px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .submit-btn:hover {

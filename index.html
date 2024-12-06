@@ -59,19 +59,47 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar shadow">
-        <div><img src="https://www.artemishospitals.com/latestdesign/assets/images/logo/artemis-logo.png" alt=""></div>
-        <!-- <div class="cta-main">
-            <p>Call us now</p>
-        </div> -->
-        <button
-            class="group border border-[#916301] relative h-12 overflow-hidden rounded-full bg-[#664200] px-6 text-neutral-50 transition hover:bg-[#916301]">
-            <span class="relative">Call Us Now</span>
-            <div
-                class="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[12px]">
-                <div class="relative h-full w-8 bg-white/30"></div>
+    <nav class="navbar shadow fixed top-0 w-full bg-white z-50 px-4 py-2">
+        <div class=" mx-auto w-full flex items-center justify-between">
+            <div class="w-40">
+                <img src="https://www.artemishospitals.com/latestdesign/assets/images/logo/artemis-logo.png"
+                    alt="Artemis Logo" class="w-full">
             </div>
-        </button>
+
+            <!-- Navigation Buttons - Hidden on Mobile -->
+            <div class="hidden md:flex nav-buttons flex space-x-4 items-center">
+                <button onclick="scrollToSection('services')"
+                    class="px-4 py-2 text-[#664200] hover:bg-[#664200] hover:text-white rounded-md transition-colors">
+                    Our Services
+                </button>
+                <button onclick="scrollToSection('doctors')"
+                    class="px-4 py-2 text-[#664200] hover:bg-[#664200] hover:text-white rounded-md transition-colors">
+                    Our Doctors
+                </button>
+                <button onclick="scrollToSection('facilities')"
+                    class="px-4 py-2 text-[#664200] hover:bg-[#664200] hover:text-white rounded-md transition-colors">
+                    Facilities
+                </button>
+                <button onclick="scrollToSection('testimonials')"
+                    class="px-4 py-2 text-[#664200] hover:bg-[#664200] hover:text-white rounded-md transition-colors">
+                    Testimonials
+                </button>
+                <button onclick="scrollToSection('contact')"
+                    class="px-4 py-2 text-[#664200] hover:bg-[#664200] hover:text-white rounded-md transition-colors">
+                    Contact Us
+                </button>
+            </div>
+
+            <!-- Call Button -->
+            <button
+                class="group border border-[#916301] relative h-12 overflow-hidden rounded-full bg-[#664200] px-6 text-neutral-50 transition hover:bg-[#916301]">
+                <span class="relative"><a href="tel:8929000217">Call Us Now</a></span>
+                <div
+                    class="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[12px]">
+                    <div class="relative h-full w-8 bg-white/30"></div>
+                </div>
+            </button>
+        </div>
     </nav>
 
     <!-- Hero section -->
@@ -161,29 +189,30 @@
                     <input type="email" placeholder="Email" />
                     <input type="tel" placeholder="Phone Number" />
                     <input type="text" placeholder="Message" />
+                    <input type="number" placeholder="ZIP Code" />
                     <button type="submit" class="submit-btn">SUBMIT</button>
                 </form>
             </div>
             <div class="stats md:hidden grid w-full grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
                 <div class="stat flex flex-col items-center p-4  rounded ">
                     <img src="/assets/Bed.png" alt="stat" class="w-12 h-12 mb-2">
-                    <span class="value text-xl font-bold">30+</span>
-                    <span class="label text-sm text-gray-600">Years</span>
+                    <span class="value text-xl font-bold">500+</span>
+                    <span class="label text-sm text-gray-600">Beds</span>
                 </div>
                 <div class="stat flex flex-col items-center p-4  rounded ">
                     <img src="/assets/Countries.png" alt="stat" class="w-12 h-12 mb-2">
-                    <span class="value text-xl font-bold">300+</span>
-                    <span class="label text-sm text-gray-600">Patients</span>
+                    <span class="value text-xl font-bold">70+</span>
+                    <span class="label text-sm text-gray-600">Countries</span>
                 </div>
                 <div class="stat flex flex-col items-center p-4  rounded ">
                     <img src="/assets/Doctors.png" alt="stat" class="w-12 h-12 mb-2">
-                    <span class="value text-xl font-bold">50+</span>
-                    <span class="label text-sm text-gray-600">Awards</span>
+                    <span class="value text-xl font-bold">400+</span>
+                    <span class="label text-sm text-gray-600">Doctors</span>
                 </div>
                 <div class="stat flex flex-col items-center p-4  rounded ">
                     <img src="/assets/Hospital.png" alt="stat" class="w-12 h-12 mb-2">
-                    <span class="value text-xl font-bold">100+</span>
-                    <span class="label text-sm text-gray-600">Staff</span>
+                    <span class="value text-xl font-bold">40+</span>
+                    <span class="label text-sm text-gray-600">Super Specialties</span>
                 </div>
                 <!-- Add the remaining stats similarly -->
             </div>
@@ -197,7 +226,8 @@
             providing exceptional care for a
             variety of spinal disorders. Our highly experienced surgeons, neurologists, and specialists collaborate to
             offer
-            personalized treatment plans that prioritize the well-being of each patient.We focus on a holistic approach,
+            personalized treatment plans that prioritize the well-being of each patient. We focus on a holistic
+            approach,
             offering both surgical and non-surgical options to treat conditions like spinal deformities, degenerative
             diseases, tumors, traumatic injuries, and chronic pain. Our minimally invasive surgery
             techniques, targeted therapies, and comprehensive rehabilitation ensure optimal recovery.
@@ -205,7 +235,7 @@
             diagnoses and
             effective treatments. Our modern imaging systems and innovative surgical methods are designed to deliver the
             highest
-            standard of care.At Artemis Hospitals, we are committed to restoring the quality of life for our patients.
+            standard of care. At Artemis Hospitals, we are committed to restoring the quality of life for our patients.
             Whether seeking treatment for
             a specific condition or preventive care, trust our expert team for world-class spine care and compassionate
             support.
@@ -214,7 +244,7 @@
         <!-- CTA Button -->
         <button
             class="group border border-[#916301] relative h-12 overflow-hidden rounded-full bg-[#664200] px-6 text-neutral-50 transition hover:bg-[#916301]">
-            <span class="relative text-sm">Call Us Now</span>
+            <span class="relative text-sm"><a href="tel:8929000217">Call Us Now</a></span>
             <div
                 class="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[12px]">
                 <div class="relative h-full w-8 bg-white/30"></div>
@@ -332,7 +362,7 @@
         <!-- CTA Button -->
         <button
             class="group border border-[#916301] relative h-12 overflow-hidden rounded-full bg-[#664200] px-6 text-neutral-50 transition hover:bg-[#916301]">
-            <span class="relative">Call Us Now</span>
+            <span class="relative"><a href="tel:8929000217">Call Us Now</a></span>
             <div
                 class="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[12px]">
                 <div class="relative h-full w-8 bg-white/30"></div>
@@ -530,7 +560,7 @@
                         medical treatment’s location can be selected along with vacation activities.</p>
                 </div>
             </div>
-            <div class="faq-item">
+            <!-- <div class="faq-item">
                 <div class="faq-question">
                     <h3>Do doctors in India speak English?</h3>
                     <div class="icon">+</div>
@@ -540,7 +570,7 @@
                         like Artemis can speak
                         English fluently which makes it easy for foreign patients.</p>
                 </div>
-            </div>
+            </div> -->
             <div class="faq-item">
                 <div class="faq-question">
                     <h3>Is it safe to get medical treatment in India?
@@ -657,9 +687,11 @@
                             </div>
 
                             <p class="mt-4 text-gray-700">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                                consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius
-                                accusamus error officiis atque voluptates magnam!
+                                For years I have experienced chronic back pain and was apprehensive about the idea of
+                                surgery. But thanks to Dr. Hitesh
+                                Garg at Artemis Hospitals, I had nothing to worry about. It was a brilliantly performed
+                                spine surgery that was minimally
+                                invasive and I was on my feet within days!
                             </p>
                         </blockquote>
                     </div>
@@ -906,7 +938,10 @@
                 Save time and avoid the hassle by registering online before your visit.
             </p>
             <p class="mt-2 max-w-xl text-base font-bold text-red-900">
-                Tel -
+                <a href="tel:8929000217">Tel - 8929000217</a>
+            </p>
+            <p class="mt-2 max-w-xl text-base font-bold text-red-900">
+                <a href="mailto:digitalquery@artemishospitals.com">Email: digitalquery@artemishospitals.com</a>
             </p>
             <form>
                 <div class="mt-6 sm:flex jusitfy-start">
@@ -920,7 +955,7 @@
                         <button
                             class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200 sm:ml-4 mt-4 sm:mt-0"
                             type="submit">
-                            Send Mail
+                            Book An Apppointment
                         </button>
                     </form>
                 </div>
@@ -932,6 +967,22 @@
             </div>
         </div>
     </div>
+
+
+    <button
+        class="call-button fixed bottom-8 right-8 w-16 h-16 bg-[#fcf5e0] rounded-full flex items-center justify-center shadow-lg hover:bg-[#664200] transition-colors duration-300 z-50 cursor-pointer"
+        onclick="handleCall()">
+        <!-- Phone Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#7a6f49] hover:text-white" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+
+        <!-- Shimmer Effect -->
+        <!-- <div class="shimmer-effect rounded-full"></div> -->
+    </button>
+
 
     <script>
         // Select all FAQ items
@@ -1054,6 +1105,13 @@
 
         // Set default active accordion to the first one
         document.getElementById('accordion-1').click();
+    </script>
+
+    <script>
+        function handleCall() {
+            // Add your call handling logic here
+            alert('Initiating call...');
+        }
     </script>
 
 </body>

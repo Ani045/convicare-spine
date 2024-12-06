@@ -68,25 +68,25 @@
 
             <!-- Navigation Buttons - Hidden on Mobile -->
             <div class="hidden md:flex nav-buttons flex space-x-4 items-center">
-                <button onclick="scrollToSection('services')"
+                <button href="#about-us-sec"
                     class="px-4 py-2 text-[#664200] hover:bg-[#664200] hover:text-white rounded-md transition-colors">
-                    Our Services
+                    <a href="#about-us-sec">About Us</a>
                 </button>
-                <button onclick="scrollToSection('doctors')"
+                <button onclick="scrollToSection('services-sec')"
                     class="px-4 py-2 text-[#664200] hover:bg-[#664200] hover:text-white rounded-md transition-colors">
-                    Our Doctors
+                    <a href="#treatments-sec">Treatments</a>
                 </button>
-                <button onclick="scrollToSection('facilities')"
+                <button onclick="scrollToSection('teams-sec')"
                     class="px-4 py-2 text-[#664200] hover:bg-[#664200] hover:text-white rounded-md transition-colors">
-                    Facilities
+                    <a href="#doctors-sec">Doctors</a>
                 </button>
                 <button onclick="scrollToSection('testimonials')"
                     class="px-4 py-2 text-[#664200] hover:bg-[#664200] hover:text-white rounded-md transition-colors">
-                    Testimonials
+                    <a href="#testimonials-sec">Testimonials</a>
                 </button>
-                <button onclick="scrollToSection('contact')"
+                <button onclick="scrollToSection('FAQ-sec')"
                     class="px-4 py-2 text-[#664200] hover:bg-[#664200] hover:text-white rounded-md transition-colors">
-                    Contact Us
+                    <a href="#FAQ-sec">FAQs</a>
                 </button>
             </div>
 
@@ -220,7 +220,7 @@
     </section>
 
     <!-- About Us Section -->
-    <section class="about-us " id="about">
+    <section class="about-us about-us-sec" id="about-us-sec">
         <h3>Discover India’s Top Rated Doctors and Services at Artemis Hospital Today</h3>
         <p class="about-desc">Artemis Hospitals is home to a team of world-renowned spine specialists dedicated to
             providing exceptional care for a
@@ -253,7 +253,7 @@
     </section>
 
     <!-- Services section -->
-    <section id="our-services" class="services-section">
+    <section class="services-section" id="treatments-sec">
         <div class="services-container">
             <!-- <div class="services-image">
                 <img src="https://via.placeholder.com/300x400" alt="Spine Surgery">
@@ -343,7 +343,7 @@
     </section>
 
     <!-- Treatment plan -->
-    <section class="treatment-plan" id="about">
+    <section class="treatment-plan">
         <h3>Hassle-Free Treatment Plan
         </h3>
         <p class="treatment-desc">At Artemis Hospitals, we know how difficult it is to travel overseas for medical
@@ -462,7 +462,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq-section FAQ-sec" id="FAQ-sec">
         <div class="faq-container mt-14">
             <div class="faq-header">
                 <h2 class="font-bold text-[#352000]">Frequently Asked Questions</h2>
@@ -600,7 +600,7 @@
     </section>
 
     <!-- Teams section -->
-    <section class="doctors-section">
+    <section class="doctors-section teams-sec" id="doctors-sec">
         <h2 class="font-bold text-[#352000] text-[2rem]">Meet Our Doctors</h2>
         <div class="doctors-container">
             <div class="doctor-card">
@@ -622,8 +622,8 @@
     </section>
 
 
-    <section class="bg-white">
-        <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <section class="bg-white" id="testimonials-sec">
+        <div class=" mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
             <h2 class="font-bold text-[#352000] text-center text-[2rem]">Patient Reviews</h2>
 
             <div class="mt-8">
@@ -962,12 +962,11 @@
             </form>
             <div class="absolute inset-y-0 right-0 hidden lg:block lg:left-1/2 xl:left-1/2">
                 <picture>
-                    <img class="object-cover w-1/2 mx-auto maw-w-44" src="/assets/doctorcta.png" alt="" />
+                    <img class="object-cover w-full mx-auto maw-w-xl" src="/assets/artemis-hospital.png" alt="" />
                 </picture>
             </div>
         </div>
     </div>
-
 
     <button
         class="call-button fixed bottom-8 right-8 w-16 h-16 bg-[#fcf5e0] rounded-full flex items-center justify-center shadow-lg hover:bg-[#664200] transition-colors duration-300 z-50 cursor-pointer"
@@ -982,7 +981,6 @@
         <!-- Shimmer Effect -->
         <!-- <div class="shimmer-effect rounded-full"></div> -->
     </button>
-
 
     <script>
         // Select all FAQ items
@@ -1105,6 +1103,30 @@
 
         // Set default active accordion to the first one
         document.getElementById('accordion-1').click();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all buttons that scroll to sections
+            const scrollButtons = document.querySelectorAll('[data-scroll]');
+
+            scrollButtons.forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('data-scroll');
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        const navHeight = document.querySelector('.navbar').offsetHeight;
+                        const topOffset = targetSection.getBoundingClientRect().top + window.pageYOffset - navHeight;
+
+                        window.scrollTo({
+                            top: topOffset,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
     </script>
 
     <script>

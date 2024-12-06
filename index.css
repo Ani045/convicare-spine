@@ -45,7 +45,7 @@ a {
 }
 
 .about-us h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: 600;
   line-height: 40px;
   margin-bottom: 20px;
@@ -94,7 +94,7 @@ a {
 }
 
 .treatment-plan h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: 600;
   line-height: 40px;
   margin-bottom: 20px;
@@ -144,12 +144,12 @@ html {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .about-us h3 {
-    font-size: 1.6rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
   }
 
-  .treatment-plan h3 {
+  /* .treatment-plan h3 {
     font-size: 1.6rem;
-  }
+  } */
 
   .about-desc {
     font-size: 1rem;
@@ -179,12 +179,12 @@ html {
   }
 
   .about-desc {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0 15px;
   }
 
   .treatment-desc {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0 15px;
   }
 
@@ -252,8 +252,8 @@ html {
   background-color: #352000;
   color: white;
   padding: 0.5rem;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   text-align: center;
   border-radius: 1000px;
 }
@@ -488,6 +488,7 @@ html {
 .stat .label {
   font-size: 1rem;
   color: #333;
+  text-align: center;
 }
 
 .right-content {
@@ -1348,7 +1349,7 @@ a {
   }
 
   .service-title {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .service-description {

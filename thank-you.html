@@ -7,11 +7,34 @@
     <title>Thank You</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+                  .content-auto {
+                    content-visibility: auto;
+                  }
+                }
+              </style>
+    <style>
+        .active-accordion {
+            background-color: #7a6f49;
+            /* Whiskey */
+            color: #fff;
+        }
+
+        .active-accordion-text {
+            color: #7a6f49;
+            /* Whiskey */
+        }
+    </style>
 </head>
 
 <body>
 
-    <nav class="fixed top-0 w-full z-50 px-4 md:px-10 py-2 pb-3 !bg-[#fffbda] shadow">
+    <nav class="fixed top-0 w-full z-50 px-4 md:px-10 py-2 pb-3 !bg-[#fffbda] shadow"
+        style="background-color: #fffbda;">
         <div class="mx-auto w-full">
             <!-- Main navbar container -->
             <div class="flex items-center justify-between">
@@ -37,7 +60,7 @@
     </section>
 
     <!-- CTA Footer -->
-    <div class="bg-[#fcf5e0] mt-14">
+    <div class="bg-[#fcf5e0] mt-14 border-t bg-[#fff]" style="background-color: #fffbda;">
         <div class="relative px-4 py-6 overflow-hidden sm:px-6 sm:py-8 lg:p-12 xl:p-16">
             <h2 class="text-2xl font-semibold font-display text-black sm:text-3xl">
                 SKIP THE WAITING ROOM – REGISTER ONLINE!
@@ -55,11 +78,11 @@
                 <div class="mt-6 sm:flex jusitfy-start">
                     <form
                         class="flex flex-col justify-center w-3/4 max-w-sm space-y-3 md:flex-row md:w-full md:space-x-3 md:space-y-0">
-                        <div class=" relative ">
+                        <!-- <div class=" relative ">
                             <input type="text" id="&quot;form-subscribe-Subscribe"
                                 class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                                 placeholder="Email" />
-                        </div>
+                        </div> -->
                         <button
                             class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200 sm:ml-4 mt-4 sm:mt-0"
                             type="submit">

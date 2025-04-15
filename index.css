@@ -20,14 +20,13 @@ a {
 /* About Us Section Styles */
 .about-us {
   background-color: #ffffff;
-  /* Light blue color */
   width: 100%;
   padding: 30px 20px;
   text-align: center;
   align-items: center;
   background-size: cover;
   background-position: center;
-  color: #5e2a00;
+  color: #4a235a; /* Changed to purple */
   position: relative;
   overflow: hidden;
 }
@@ -39,9 +38,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  /* justify-content: center; */
-  /* background: rgba(0, 0, 0, 0.3); */
-  /* Dark overlay for contrast */
 }
 
 .about-us h3 {
@@ -69,14 +65,13 @@ a {
 
 .treatment-plan {
   background-color: white;
-  /* Light blue color */
   width: 100%;
   padding: 30px 20px;
   text-align: center;
   align-items: center;
   background-size: cover;
   background-position: center;
-  color: #5e2a00;
+  color: #4a235a; /* Changed to purple */
   position: relative;
   overflow: hidden;
 }
@@ -88,9 +83,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  /* justify-content: center; */
-  /* background: rgba(0, 0, 0, 0.3); */
-  /* Dark overlay for contrast */
 }
 
 .treatment-plan h3 {
@@ -119,8 +111,7 @@ a {
 /* CTA Button Styles */
 .cta-btn {
   padding: 15px 30px;
-  background-color: #836400;
-  /* Teal color */
+  background-color: #8e44ad; /* Changed to purple */
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
@@ -132,8 +123,7 @@ a {
 }
 
 .cta-btn:hover {
-  background-color: #352000;
-  /* Darker teal on hover */
+  background-color: #663399; /* Darker purple on hover */
 }
 
 /* Smooth Scrolling */
@@ -146,10 +136,6 @@ html {
   .about-us h3 {
     font-size: clamp(1.5rem, 5vw, 2rem);
   }
-
-  /* .treatment-plan h3 {
-    font-size: 1.6rem;
-  } */
 
   .about-desc {
     font-size: 1rem;
@@ -202,11 +188,8 @@ html {
   max-width: 1280px;
   margin: 0 auto;
   box-shadow: #00000046 0px 0px 5px;
-  /* border: 1px solid gray; */
   border-radius: 20px;
-  background-color: #ffffea;
-  /* border-radius: 8px; */
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  background-color: #f9f3ff; /* Light purple background */
   overflow: hidden;
   padding-bottom: 60px;
   padding-top: 20px;
@@ -229,7 +212,7 @@ html {
 }
 
 .faq-question {
-  background-color: #ffffea;
+  background-color: #f9f3ff; /* Light purple background */
   padding: 15px 20px;
   cursor: pointer;
   display: flex;
@@ -239,17 +222,17 @@ html {
 }
 
 .faq-question:hover {
-  background-color: #fff4ca;
+  background-color: #ede2ff; /* Lighter purple on hover */
 }
 
 .faq-question h3 {
   font-size: 1.1em;
-  color: #34495e;
+  color: #4a235a; /* Purple text */
 }
 
 .faq-question .icon {
   transition: transform 0.3s ease;
-  background-color: #352000;
+  background-color: #4a235a; /* Purple background */
   color: white;
   padding: 0.5rem;
   min-width: 40px;
@@ -265,14 +248,13 @@ html {
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  background-color: #fff6e3;
+  background-color: #fcf7ff; /* Very light purple */
   padding: 0 20px;
   transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
 .faq-item.active .faq-answer {
   max-height: 500px;
-  /* Enough to show the content */
   padding: 15px 20px;
 }
 
@@ -283,14 +265,12 @@ html {
 
 /* Medical Color Palette */
 :root {
-  --primary-color: #1e90ff;
-  /* DodgerBlue */
-  --secondary-color: #2ecc71;
-  /* Emerald */
-  --background-color: #f4f6f8;
-  --text-color: #34495e;
-  --header-bg: #2c3e50;
-  --header-text: #ecf0f1;
+  --primary-color: #8e44ad; /* Purple */
+  --secondary-color: #c49102; /* Dark yellow */
+  --background-color: #f9f3ff; /* Light purple */
+  --text-color: #4a235a; /* Dark purple */
+  --header-bg: #4a235a; /* Dark purple */
+  --header-text: #fcf7ff; /* Very light purple */
 }
 
 /* Responsive Design */
@@ -306,7 +286,6 @@ html {
 
 .doctors-section {
   padding: 40px 20px;
-  /* background-color: #f2f2f2; */
   margin: 0 auto;
   align-items: center;
   max-width: 1000px;
@@ -314,7 +293,7 @@ html {
 
 .doctors-section h2 {
   text-align: center;
-  color: #333;
+  color: #4a235a; /* Purple text */
   margin-bottom: 30px;
 }
 
@@ -343,16 +322,14 @@ html {
 .doctor-card h3 {
   padding-bottom: 5px;
   padding-top: 10px;
-  color: #333;
+  color: #4a235a; /* Purple text */
   font-size: 1.4rem;
 }
 
 .doctor-stat {
   font-size: 0.8rem;
-  color: #916300;
-  /* width: 50%; */
+  color: #c49102; /* Dark yellow text */
   text-align: center;
-  /* margin-bottom: 20px; */
 }
 
 .role {
@@ -367,20 +344,11 @@ html {
   margin-top: 4rem;
   position: relative;
   padding: 80px 0;
-  background-image: url("/assets/Spinal-cord.webp");
+  background-image: url("assets/Spinal-cord.png");
   background-size: cover;
   background-position: center;
-  background-color: #fffbda;
+  background-color: #f3e9ff; /* Light purple background */
 }
-
-/* .hero-bg-img {
-    position: absolute;
-    top: 0;
-    left: 30%;
-    width: 800px;
-    overflow: hidden;
-    box-sizing: border-box;
-} */
 
 .hero-section::before {
   content: "";
@@ -423,7 +391,7 @@ html {
   line-height: 60px;
   font-size: 3rem;
   font-weight: bold;
-  color: #664200;
+  color: #4a235a; /* Purple text */
   margin-bottom: 20px;
   text-shadow: 10px solid #000000;
 }
@@ -442,18 +410,18 @@ html {
   gap: 8px;
   padding: 0.5rem 2rem;
   border-radius: 100px;
-  background-color: #664200;
+  background-color: #4a235a; /* Purple background */
 }
 
 .feature-blue {
-  background-color: #916301;
+  background-color: #9b59b6; /* Lighter purple */
 }
 
 .feature .icon {
   margin-left: -10px;
   width: 20px;
   height: 20px;
-  background-color: #3f3000;
+  background-color: #c49102; /* Dark yellow */
   border-radius: 50%;
 }
 
@@ -463,8 +431,7 @@ html {
 }
 
 .stats {
-  background-color: #ffe285d3;
-  /* padding: 1rem; */
+  background-color: #f3e9ff;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 8px;
@@ -482,7 +449,7 @@ html {
 .stat .value {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #6d4700;
+  color: #4a235a; /* Purple text */
 }
 
 .stat .label {
@@ -494,7 +461,7 @@ html {
 .right-content {
   flex: 1;
   max-width: 400px;
-  background-color: rgba(123, 104, 37, 0.6);
+  background-color: rgba(74, 35, 90, 0.7); /* Transparent purple */
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -514,11 +481,11 @@ html {
   margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 100px;
-  background-color: #fff9e9;
+  background-color: #f9f3ff; /* Light purple */
 }
 
 .submit-btn {
-  background-color: #916300;
+  background-color:#8e44ad; /* Dark yellow */
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -528,7 +495,7 @@ html {
 }
 
 .submit-btn:hover {
-  background-color: #312700;
+  background-color: #4a235a; /* Darker yellow on hover */
 }
 
 .overlay {
@@ -537,7 +504,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
   z-index: 1;
 }
 
@@ -602,7 +569,6 @@ html {
 
   .stats {
     max-width: none;
-    /* max-height: 400px; */
   }
 }
 
@@ -697,7 +663,6 @@ html {
   .stat {
     flex-direction: row;
     gap: 5px;
-    /* margin-top: 20px; */
   }
 
   .stat .value {
@@ -724,6 +689,9 @@ html {
   .submit-btn {
     padding: 8px 16px;
   }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 }
 
 /* Navbar Styles */
@@ -739,7 +707,7 @@ html {
   align-items: center;
   padding-left: 5rem;
   padding-right: 5rem;
-  background-color: #fffbda;
+  background-color: #f3e9ff; /* Light purple background */
 }
 
 .navbar img {
@@ -749,7 +717,7 @@ html {
 
 .cta-main {
   padding: 1rem 2rem;
-  background-color: rgb(151, 98, 0);
+  background-color: #8e44ad; /* Purple background */
   border-radius: 100px;
   width: fit-content;
   height: 50px;
@@ -761,7 +729,7 @@ html {
 }
 
 .cta-main:hover {
-  background-color: rgb(95, 62, 1);
+  background-color: #663399; /* Darker purple on hover */
 }
 
 .cta-main p {
@@ -829,12 +797,11 @@ html {
 
 .appointment-section {
   width: 100%;
-  background-color: #ffd17c;
+  background-color: #c49102; /* Dark yellow background */
   display: flex;
   flex-direction: row;
   max-height: 400px;
   align-items: center;
-  /* padding: 5rem; */
   padding-left: 5rem;
   padding-right: 5rem;
   justify-content: space-between;
@@ -848,15 +815,17 @@ html {
 .appointment-title {
   font-size: 1.4rem;
   margin: 0;
+  color: #ffffff;
 }
 
 .appointment-subtitle {
   font-size: 2rem;
   margin: 20px 0;
+  color: #ffffff;
 }
 
 .appointment-button {
-  background-color: rgb(194, 165, 0);
+  background-color: #4a235a; /* Purple background */
   padding: 0.5rem 1.5em;
   border-radius: 8px;
   display: inline-block;
@@ -864,7 +833,7 @@ html {
 }
 
 .appointment-button:hover {
-  background-color: rgb(164, 145, 0);
+  background-color: #663399; /* Darker purple on hover */
 }
 
 a {
@@ -874,13 +843,12 @@ a {
 
 .appointment-contact {
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   font-size: 1rem;
   margin-top: 15px;
 }
 
 .appointment-image-container {
-  /* height: 300px; */
   flex-shrink: 0;
 }
 
@@ -985,14 +953,15 @@ a {
 /* common styles */
 .section-title-h2 {
   font-size: 2rem;
+  color: #4a235a; /* Purple text */
 }
 
 .testimonials-title {
   font-size: 2rem;
-  /* margin: 0 auto; */
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
+  color: #4a235a; /* Purple text */
 }
 
 .medical-spine-section {
@@ -1003,7 +972,6 @@ a {
   display: flex;
   align-items: center;
   gap: 40px;
-  /* background-color: #f9fafa; */
 }
 
 .medical-spine-section .content {
@@ -1011,7 +979,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* gap: 80px; */
 }
 
 .medical-spine-section .image-container {
@@ -1024,11 +991,10 @@ a {
   height: 400px;
   object-fit: cover;
   border-radius: 8px;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .medical-spine-section h1 {
-  color: #2c3e50;
+  color: #4a235a; /* Purple text */
   font-size: 2.2rem;
   margin-bottom: 15px;
   font-weight: 600;
@@ -1047,10 +1013,9 @@ a {
 
 .medical-spine-section .features-points li {
   position: relative;
-  background-color: #b29257;
+  background-color: #9b59b6; /* Light purple */
   border-radius: 50px;
   padding: 0.5rem;
-  /* padding-left: 1rem; */
   padding-left: 25px;
   margin-bottom: 12px;
   color: #ffffff;
@@ -1061,9 +1026,8 @@ a {
   content: "•";
   position: absolute;
   left: 0;
-  color: #5e2a00;
+  color: #c49102; /* Dark yellow */
   padding-left: 0.5rem;
-  /* padding-right: 0.6rem; */
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1;
@@ -1094,11 +1058,11 @@ a {
 /* Swiper Navigation Styles */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #333 !important;
+  color: #4a235a !important; /* Purple */
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #333 !important;
+  background-color: #4a235a !important; /* Purple */
 }
 
 /* Responsive Adjustments */
@@ -1122,7 +1086,7 @@ a {
   width: 100%;
   background-color: #ffffff;
   border-radius: 5px;
-  border-top: 5px solid #d2652d;
+  border-top: 5px solid #8e44ad; /* Purple border */
 }
 
 .snip1533 *,
@@ -1143,7 +1107,7 @@ a {
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  color: #d2652d;
+  color: #8e44ad; /* Purple color */
   content: "\f10e";
   font-family: "FontAwesome";
   font-size: 32px;
@@ -1156,7 +1120,7 @@ a {
 }
 
 .snip1533 h3 {
-  color: #3c3c3c;
+  color: #4a235a; /* Purple text */
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
@@ -1176,28 +1140,17 @@ a {
 }
 
 .patient-testimonials {
-  /* width: 100%; */
   display: flex;
   justify-content: center;
-  /* margin: 0 auto; */
 }
 
 @media (max-width: 768px) {
   .patient-testimonials {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin: 0 auto; */
   }
-}
-
-.patient-testimonials {
-  /* width: 100%; */
-  display: flex;
-  justify-content: center;
-  /* margin: 0 auto; */
 }
 
 .testimonials-section {
@@ -1208,7 +1161,7 @@ a {
 /* Services Section */
 .services-section {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #fcf5e0 0%, #f3f1cf 100%);
+  background: linear-gradient(135deg, #f3e9ff 0%, #eae2ff 100%); /* Purple gradient */
 }
 
 .services-container {
@@ -1218,7 +1171,6 @@ a {
   margin: 0 auto;
   gap: 40px;
   flex-wrap: wrap;
-  /* height: 100%; */
   object-fit: cover;
 }
 
@@ -1233,7 +1185,6 @@ a {
   justify-content: center;
   flex: 1;
   max-width: 1000px;
-  /* min-width: 280px; */
 }
 
 .section-heading {
@@ -1241,7 +1192,7 @@ a {
   text-align: center;
   margin-bottom: 30px;
   font-weight: bold;
-  color: #352000;
+  color: #4a235a; /* Purple text */
 }
 
 .section-description {
@@ -1262,36 +1213,34 @@ a {
   background: #fff;
   border-radius: 10px;
   padding: 15px;
-  /* padding-bottom: 20px; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 2px dashed rgb(155, 106, 0);
+  border: 2px dashed #9b59b6; /* Light purple border */
 }
 
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  background-color: #ffeac3;
-  /* color: white; */
-  border: 2px solid rgb(131, 74, 0);
+  background-color: #f3e9ff; /* Light purple background */
+  border: 2px solid #4a235a; /* Dark purple border */
   transition: all ease-in-out;
   transition-duration: 300ms;
 }
 
 .service-icon {
   font-size: 2rem;
-  color: #e74c3c;
+  color: #8e44ad; /* Purple color */
   margin-bottom: 15px;
 }
 
 .service-title {
   font-size: 1rem;
   margin-bottom: 10px;
-  color: #2c3e50;
+  color: #4a235a; /* Purple text */
   text-wrap: wrap;
   font-weight: bold;
 }
@@ -1354,54 +1303,5 @@ a {
 
   .service-description {
     font-size: 0.75rem;
-  }
-}
-
-/* call button shimmering */
-@keyframes glow {
-  0%,
-  100% {
-    box-shadow: 0 0 15px #7ed200, 0 0 30px #68ff22;
-  }
-  50% {
-    box-shadow: 0 0 25px #098200, 0 0 50px #276f00;
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.call-button {
-  animation: glow 2s infinite;
-}
-
-.shimmer-effect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
-  animation: shimmer 2s infinite;
-}
-
-/* Responsive sizes */
-@media (max-width: 640px) {
-  .call-button {
-    width: 50px;
-    height: 50px;
-    right: 20px;
-    bottom: 20px;
   }
 }
